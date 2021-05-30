@@ -1,0 +1,46 @@
+.header {
+    height: 98px;
+    padding-top: 49px;
+    border: 1px solid #F2F2F2;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__nav {
+        display: flex;
+        font-size: 16px;
+        line-height: 20px;
+        color: $dark;
+        font-weight: 400;
+        li {
+            position: relative;
+            list-style: none;
+            margin: 0 32px;
+            transition: all .5s;
+            &:nth-child(6) {
+                margin-right: 0;
+                font-family: Gilroy, 'sans-serif';
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: $blue;
+            }
+            a {
+                text-decoration: none;
+                display: inline-block;
+                position: relative;
+                &:hover::after {
+                    width: 120%;
+                    right: -10%;
+                    bottom: -29px;
+                    content: "";
+                    display: block;
+                    height: 2px;
+                    position: absolute;
+                    background: $orange;
+                }
+               
+            }
+        }
+    }    
+}

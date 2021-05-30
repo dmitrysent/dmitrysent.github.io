@@ -1,0 +1,69 @@
+.contacts {
+    background: url(../../images/map.jpg);
+    padding-top: 67px;
+    height: 632px;
+    &__inner {
+        a {
+            display: block;
+        }
+        
+        text-align: center;
+        &-img {
+            background-color: $orange;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin: 0 auto;
+            padding: 18px 18px;
+            img {
+                width: 100%;
+            }
+        }
+        &-descr {
+            margin-top: 29px;
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &-tel {
+            margin-top: 19px;
+            font-size: 64px;
+            line-height: 75px;
+        }
+        &-mail {
+            margin-top: 16px;
+            font-size: 18px;
+            line-height: 21px;
+            color: $blue;
+        }
+        &-button {
+            margin: 0 auto;
+            margin-top: 50px;
+            width: 265px;
+            height: 64px;
+            background-color: $orange;
+            padding-top: 22px;
+            text-align: center;
+            color: #FFF;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 19px;
+            transition: all .5s;
+            &:hover {
+            background-color: #E77E1E;
+            }
+        }
+    }
+    &__social {
+        margin-top: 49px;
+        display: flex;
+        justify-content: center;
+        &-item {
+            padding-top: 18px;
+            margin: 0 8px;
+            width: 68px;
+            height: 50px;
+            border: 1px solid #E0E0E0;
+        }
+    }
+}
+

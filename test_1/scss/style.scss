@@ -1,0 +1,48 @@
+html  {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+*::before,
+*::after{
+    box-sizing:inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: normal;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.container {
+    max-width: 1212px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+}
+
+@import 'base/variables';
+@import 'blocks/header';
+@import 'blocks/hamburger';
+@import 'blocks/main';
+@import 'blocks/tiles';
+@import 'blocks/carousel';
+@import 'blocks/service';
+@import 'blocks/video';
+@import 'blocks/values';
+@import 'blocks/job';
+@import 'blocks/students';
+@import 'blocks/contacts';
+@import 'blocks/footer';
+@import 'blocks/modal';
+@import 'blocks/media';
