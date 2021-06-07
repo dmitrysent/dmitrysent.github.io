@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Расчёт контактов с учётом коэффициента</h1>
+    <section class="main">
+        <form action="" class="form">
+            <div class="form__item">
+                <p class="chat">Чат</p>
+                <input id="chat" type="text" placeholder="40">
+            </div>
+            <div class="form__item">
+                <p class="reviewOfDelivery">Отзыв о доставке</p>
+                <input id="reviewOfDelivery" type="text" placeholder="54">
+            </div>
+            <div class="form__item">
+                <p class="email">Email</p>
+                <input id="email" type="text" placeholder="8">
+            </div>
+            <div class="form__item">
+                <p class="reviewNotPublic">Неопубликованные отзывы</p>
+                <input id="reviewNotPublic" type="text" placeholder="40">
+            </div>
+            <div class="form__item">
+                <p class="jira">Закрытие Jira</p>
+                <input id="jira" type="text" placeholder="54">
+            </div>
+            <div class="form__item">
+                <p class="questions">Вопросы и ответы</p>
+                <input id="questions" type="text" placeholder="8">
+            </div>
+            <div class="form__item">
+                <p class="reviewPublic">Опубликованные отзывы</p>
+                <input id="reviewPublic" type="text" placeholder="40">
+            </div>
+            <div class="form__item">
+                <p class="nps">Анкеты NPS</p>
+                <input id="nps" type="text" placeholder="8">
+            </div>
+            <div class="form__item">
+                <p class="callHelp">Входящий звонок Help</p>
+                <input id="callHelp" type="text" placeholder="54">
+            </div>
+            <div class="form__item">
+                <p class="serviceContact">Служебный контакт</p>
+                <input id="serviceContact" type="text" placeholder="54">
+            </div>
+
+        </form>
+        <p id="resultOld"></p>
+        <p id="resultNew"></p>
+        <button onclick="func()">Посчитаем?</button>
+
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
