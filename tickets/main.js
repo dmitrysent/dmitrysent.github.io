@@ -13,7 +13,7 @@ function func(){
         questionsOld = Number(document.getElementById("questions").value),
         questionsNew = questionsOld * 0.75,
         reviewPublicOld = Number(document.getElementById("reviewPublic").value),
-        reviewPublicNew = reviewPublicOld * 1.1,
+        reviewPublicNew = reviewPublicOld * 1.15,
         npsOld = Number(document.getElementById("nps").value),
         npsNew = npsOld * 0.75,
         callHelpOld = Number(document.getElementById("callHelp").value),
