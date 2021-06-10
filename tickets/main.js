@@ -20,8 +20,8 @@ function func(){
         callHelpNew = callHelpOld * 0.85,
         serviceContactOld = Number(document.getElementById("serviceContact").value),
         serviceContactNew = serviceContactOld * 0.6,
-        resultOld = "Колличество контактов = " + (reviewOfDeliveryOld + chat + emailOld + reviewNotPublicOld + jiraOld + reviewPublicOld + npsOld + callHelpOld + serviceContactOld),
-        resultNew = "Колличество контактов с учётом коэффициента = " + (reviewOfDeliveryNew + chat + emailNew + reviewNotPublicNew + jiraNew + reviewPublicNew + npsNew + callHelpNew + serviceContactNew);
+        resultOld = "Колличество контактов = " + (reviewOfDeliveryOld + chat + emailOld + reviewNotPublicOld + jiraOld + reviewPublicOld + questionsOld + npsOld + callHelpOld + serviceContactOld),
+        resultNew = "Колличество контактов с учётом коэффициента = " + (reviewOfDeliveryNew + chat + emailNew + reviewNotPublicNew + jiraNew + questionsNew + reviewPublicNew + npsNew + callHelpNew + serviceContactNew);
 
     document.getElementById("resultOld").innerHTML = resultOld;
     document.getElementById("resultNew").innerHTML = resultNew;
