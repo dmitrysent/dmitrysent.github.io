@@ -85,7 +85,10 @@ button.onclick = function() {
           sumOfTimeX3X4 = timeOfX3 + timeOfX4;           // количество подработок
         //   paymentHelpBeforeTax = helpTime * 150;
 
-    
+    if ((sumOfTimeX3X4) > usefulTime) {
+        alert(`Количество подработок ${sumOfTimeX3X4} превышает полезное время ${usefulTime}. Введи Корректное значение`);
+        window.location.reload();
+    };
     if (contactsOfHourse >= 10) {
         if ( (usefulTime - sumOfTimeX3X4 - 120) >= 0 ) {
             payment = (120 - sumOfTimeX3X4)  * paymantWithIncrCoefficient + ((usefulTime - 120) * 380) + (timeOfX3 * paymantWithIncrCoefficient * 3) + (timeOfX4 * paymantWithIncrCoefficient * 4);
