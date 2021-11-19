@@ -88,7 +88,7 @@ button.onclick = function() {
     
     if (contactsOfHourse >= 10) {
         if ( (usefulTime - sumOfTimeX3X4 - 120) >= 0 ) {
-            payment = 120 * paymantWithIncrCoefficient + ((usefulTime - 120 - sumOfTimeX3X4) * 380) + (timeOfX3 * paymantWithIncrCoefficient * 3) + (timeOfX4 * paymantWithIncrCoefficient * 4);
+            payment = (120 - sumOfTimeX3X4)  * paymantWithIncrCoefficient + ((usefulTime - 120) * 380) + (timeOfX3 * paymantWithIncrCoefficient * 3) + (timeOfX4 * paymantWithIncrCoefficient * 4);
         } else {
             payment = (usefulTime - sumOfTimeX3X4) * paymantWithIncrCoefficient + (timeOfX3 * paymantWithIncrCoefficient * 3) + (timeOfX4 * paymantWithIncrCoefficient * 4);
         }
